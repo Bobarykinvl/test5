@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sixth Animation View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SixthAnimationViewController" customModule="bobarykinvlApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ia-L2-uD0">
+                                <rect key="frame" x="112" y="134.66666666666666" width="169" height="103"/>
+                                <color key="backgroundColor" red="0.42633276590000002" green="0.41473270719999999" blue="1" alpha="0.65688775509999997" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="OpZ-0I-ria"/>
+                                    <constraint firstAttribute="width" constant="169" id="ZhD-pK-TAp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Push Me">
+                                    <color key="titleColor" red="0.0" green="0.40660045810000001" blue="0.59023000709999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="animateButton:" destination="eUG-PE-uRN" eventType="touchUpInside" id="Af2-EQ-1hH"/>
+                                    <action selector="animateButtonTapped:" destination="eUG-PE-uRN" eventType="touchUpInside" id="bQc-03-nrg"/>
+                                    <action selector="buttonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="P7J-iW-RR8"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTr-9c-F04" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="86.666666666666686" y="316" width="220" height="220"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Kxe-U4-hOH"/>
+                                    <constraint firstAttribute="width" constant="220" id="Mtw-xV-jEC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="catAnimation"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uTr-9c-F04" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="C3L-fi-yQp"/>
+                            <constraint firstItem="2ia-L2-uD0" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="GJh-pW-pUk"/>
+                            <constraint firstItem="uTr-9c-F04" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="K6E-UR-XQn"/>
+                            <constraint firstItem="2ia-L2-uD0" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-240" id="r0B-zt-5kW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewLottieAnimation" destination="uTr-9c-F04" id="fje-kP-eJW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="eUG-PE-uRN" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="uTr-9c-F04"/>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

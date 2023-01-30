@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>animationTransitionType</key>
+		<integer>1</integer>
+		<key>descriptionAnimation</key>
+		<string>descriptionTest</string>
+		<key>imageURL</key>
+		<string>https://i.postimg.cc/sxfZFf0j/Screenshot-at-Jan-30-19-05-20.png</string>
+		<key>title</key>
+		<string>My first animation</string>
+	</dict>
+	<dict>
+		<key>animationTransitionType</key>
+		<integer>2</integer>
+		<key>descriptionAnimation</key>
+		<string>My second animation</string>
+		<key>imageURL</key>
+		<string>https://i.postimg.cc/mZ9nhLDX/Screenshot-at-Jan-30-19-06-13.png</string>
+		<key>title</key>
+		<string>Second Animation</string>
+	</dict>
+	<dict>
+		<key>animationTransitionType</key>
+		<integer>3</integer>
+		<key>descriptionAnimation</key>
+		<string>My third animation</string>
+		<key>imageURL</key>
+		<string>https://i.postimg.cc/K8W7nTpn/fire.png</string>
+		<key>title</key>
+		<string>Third animation</string>
+	</dict>
+	<dict>
+		<key>animationTransitionType</key>
+		<integer>4</integer>
+		<key>descriptionAnimation</key>
+		<string>My fourth animation</string>
+		<key>imageURL</key>
+		<string>https://i.postimg.cc/hvhPbX5d/FB.png</string>
+		<key>title</key>
+		<string>Fourth animation</string>
+	</dict>
+	<dict>
+		<key>animationTransitionType</key>
+		<integer>5</integer>
+		<key>descriptionAnimation</key>
+		<string>My fifth animation</string>
+		<key>imageURL</key>
+		<string>https://i.postimg.cc/bwRrPfkd/snow.png</string>
+		<key>title</key>
+		<string>Fifth animation</string>
+	</dict>
+	<dict>
+		<key>animationTransitionType</key>
+		<integer>6</integer>
+		<key>descriptionAnimation</key>
+		<string>My sixth animation</string>
+		<key>imageURL</key>
+		<string>https://i.postimg.cc/DyryQ3C5/cat.png</string>
+		<key>title</key>
+		<string>Sixth animation</string>
+	</dict>
+</array>
+</plist>

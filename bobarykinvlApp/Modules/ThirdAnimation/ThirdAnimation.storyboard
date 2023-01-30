@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Third Animation View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ThirdAnimationViewController" customModule="bobarykinvlApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="39S-yS-9Bz">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snow" translatesAutoresizingMaskIntoConstraints="NO" id="yKn-sj-SPC">
+                                <rect key="frame" x="0.0" y="673" width="393" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjK-n9-DUO">
+                                <rect key="frame" x="76.666666666666686" y="362" width="240" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lF9-m8-4BM">
+                                        <rect key="frame" x="107.99999999999999" y="12" width="24.000000000000014" height="32"/>
+                                        <color key="tintColor" red="0.50605054620000001" green="0.52102203859999996" blue="0.59023000709999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39.670000000000002" id="AY7-UD-5Iw"/>
+                                            <constraint firstAttribute="width" constant="24" id="hoJ-8X-PPw"/>
+                                        </constraints>
+                                        <imageReference key="image" image="arrowtriangle.up.fill" catalog="system" symbolScale="small"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SvJ-j6-ZVQ">
+                                        <rect key="frame" x="107.99999999999999" y="84.333333333333314" width="24.000000000000014" height="32"/>
+                                        <color key="tintColor" red="0.50605054620000001" green="0.52102203859999996" blue="0.59023000709999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39.670000000000002" id="LHg-uF-MDs"/>
+                                            <constraint firstAttribute="width" constant="24" id="p4l-8P-1UH"/>
+                                        </constraints>
+                                        <imageReference key="image" image="arrowtriangle.down.fill" catalog="system" symbolScale="small"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SvJ-j6-ZVQ" secondAttribute="trailing" constant="108" id="10q-qb-g5o"/>
+                                    <constraint firstAttribute="height" constant="128" id="Brq-aj-c35"/>
+                                    <constraint firstItem="lF9-m8-4BM" firstAttribute="top" secondItem="vjK-n9-DUO" secondAttribute="top" constant="8" id="JSh-CP-Mpr"/>
+                                    <constraint firstItem="lF9-m8-4BM" firstAttribute="leading" secondItem="vjK-n9-DUO" secondAttribute="leading" constant="108" id="ffx-uA-rZH"/>
+                                    <constraint firstAttribute="trailing" secondItem="lF9-m8-4BM" secondAttribute="trailing" constant="108" id="hVc-95-mJ8"/>
+                                    <constraint firstAttribute="width" constant="240" id="hib-B9-slG"/>
+                                    <constraint firstItem="SvJ-j6-ZVQ" firstAttribute="leading" secondItem="vjK-n9-DUO" secondAttribute="leading" constant="108" id="sNV-lp-QxW"/>
+                                    <constraint firstAttribute="bottom" secondItem="SvJ-j6-ZVQ" secondAttribute="bottom" constant="8" id="xbp-pc-btD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.10512545603952497" green="0.24724949344922539" blue="0.33032343498210315" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vjK-n9-DUO" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="R9j-Of-q6W"/>
+                            <constraint firstItem="vjK-n9-DUO" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="TKd-ot-kh2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animatedView" destination="vjK-n9-DUO" id="7xl-FE-2EI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121.37404580152672" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowtriangle.down.fill" catalog="system" width="128" height="120"/>
+        <image name="arrowtriangle.up.fill" catalog="system" width="128" height="120"/>
+        <image name="fire" width="640" height="400"/>
+        <image name="snow" width="2289" height="1907"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

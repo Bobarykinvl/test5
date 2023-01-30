@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vTN-eH-qCc">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="Iea-Si-lOq">
+            <objects>
+                <viewController id="JM7-hW-qBM" customClass="MainViewController" customModule="bobarykinvlApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sbp-YY-tf8">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bQj-k1-Zlo">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="744"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ouh-jY-FoT">
+                                <rect key="frame" x="16" y="760" width="358" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7f-x5-hxN">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Add animation"/>
+                                        <connections>
+                                            <action selector="addAnimation:" destination="JM7-hW-qBM" eventType="touchUpInside" id="rUs-3Q-Fyf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CDU-aO-Qyi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bQj-k1-Zlo" firstAttribute="top" secondItem="sbp-YY-tf8" secondAttribute="top" id="EXz-UT-dRQ"/>
+                            <constraint firstItem="ouh-jY-FoT" firstAttribute="top" secondItem="bQj-k1-Zlo" secondAttribute="bottom" constant="16" id="N4u-Fd-Hek"/>
+                            <constraint firstItem="ouh-jY-FoT" firstAttribute="leading" secondItem="CDU-aO-Qyi" secondAttribute="leading" constant="16" id="Zwm-vC-8Tt"/>
+                            <constraint firstItem="bQj-k1-Zlo" firstAttribute="leading" secondItem="CDU-aO-Qyi" secondAttribute="leading" id="gqt-sU-BcS"/>
+                            <constraint firstItem="bQj-k1-Zlo" firstAttribute="trailing" secondItem="CDU-aO-Qyi" secondAttribute="trailing" id="wSb-RT-LWu"/>
+                            <constraint firstItem="CDU-aO-Qyi" firstAttribute="bottom" secondItem="ouh-jY-FoT" secondAttribute="bottom" constant="20" id="wbO-DQ-ifj"/>
+                            <constraint firstItem="CDU-aO-Qyi" firstAttribute="trailing" secondItem="ouh-jY-FoT" secondAttribute="trailing" constant="16" id="yKw-2h-Mw8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tem-0T-Qfw"/>
+                    <connections>
+                        <outlet property="tableView" destination="bQj-k1-Zlo" id="WV7-P6-HJR"/>
+                        <segue destination="7UO-1K-10j" kind="show" identifier="firstAnimationSegue" id="VMC-cj-m0j"/>
+                        <segue destination="jXP-Cu-2hM" kind="show" identifier="secondAnimationSegue" id="anq-Gf-Cbf"/>
+                        <segue destination="OMJ-01-SbC" kind="show" identifier="thirdAnimationSegue" id="dQ1-YA-kwU"/>
+                        <segue destination="s65-ws-AS7" kind="show" identifier="fourthAnimationSegue" id="FqT-x4-RMv"/>
+                        <segue destination="XY4-MZ-q4F" kind="show" identifier="fifthAnimationSegue" id="iNO-Ib-dVf"/>
+                        <segue destination="lU6-7b-dKE" kind="show" identifier="sixthAnimationSegue" id="CKV-2I-hHL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KyT-e6-Diz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870.76923076923072" y="-88.151658767772503"/>
+        </scene>
+        <!--FirstAnimation-->
+        <scene sceneID="Oat-Xn-cfn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FirstAnimation" id="7UO-1K-10j" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nan-cw-Zhi"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6PJ-hy-mIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1441" y="-379"/>
+        </scene>
+        <!--SecondAnimation-->
+        <scene sceneID="Ucg-Hr-avA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SecondAnimation" id="jXP-Cu-2hM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KI7-1i-n5l"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btQ-HS-HJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455" y="-308"/>
+        </scene>
+        <!--FifthAnimation-->
+        <scene sceneID="zVk-pF-698">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FifthAnimation" id="XY4-MZ-q4F" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="49I-UH-77p"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXv-s3-bll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624" y="-142"/>
+        </scene>
+        <!--SixthAnimation-->
+        <scene sceneID="6nm-10-8tJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SixthAnimation" id="lU6-7b-dKE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HKx-AL-5pZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5EM-ji-DUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1625" y="-100"/>
+        </scene>
+        <!--ThirdAnimation-->
+        <scene sceneID="7uS-0b-AWW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ThirdAnimation" id="OMJ-01-SbC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OK1-1v-qTV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WO9-bY-bFD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445" y="75"/>
+        </scene>
+        <!--FourthAnimation-->
+        <scene sceneID="M1A-Y6-0re">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FourthAnimation" id="s65-ws-AS7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="h3e-ew-DRo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jO-DV-JJC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1451" y="149"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GE7-fV-wci">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vTN-eH-qCc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YLt-62-fH4">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JM7-hW-qBM" kind="relationship" relationship="rootViewController" id="Etb-Js-xli"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wu1-EF-maO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.46153846153846" y="-88.151658767772503"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
